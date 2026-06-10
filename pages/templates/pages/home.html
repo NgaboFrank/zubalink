@@ -1,0 +1,113 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block title %}ZubaLink | Industrial Engineering Solutions in Rwanda{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-bg" style="background-image:linear-gradient(90deg,rgba(15,35,75,.95),rgba(15,61,145,.86),rgba(15,61,145,.25)),url('{% static "pages/img/project-10.jpeg" %}');"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Industrial Engineering • Automation • Maintenance</p>
+      <h1>Engineering Solutions That Keep Industry Moving</h1>
+      <p class="lead">Providing reliable engineering, maintenance, and technical support services for businesses, institutions, and industrial projects across Rwanda.</p>
+      <div class="hero-actions">
+        <a href="/contact/" class="btn btn-primary">Contact Us</a>
+        <a href="/services/" class="btn btn-secondary">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <span>Trusted technical partner</span>
+      <h3>Built for reliability, safety and performance.</h3>
+      <p>From control systems and electrical installations to maintenance support, ZubaLink helps organizations operate with confidence.</p>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="container stats-grid">
+    <div><strong>24/7</strong><span>Technical support mindset</span></div>
+    <div><strong>6+</strong><span>Core service areas</span></div>
+    <div><strong>100%</strong><span>Quality-focused delivery</span></div>
+    <div><strong>RW</strong><span>Serving Rwanda</span></div>
+  </div>
+</section>
+
+<section class="section intro-section">
+  <div class="container split-grid">
+    <div class="image-stack">
+      <img class="main-img" src="{% static 'pages/img/project-8.jpeg' %}" alt="Electrical panel work by ZubaLink">
+      <img class="small-img" src="{% static 'pages/img/project-1.jpeg' %}" alt="Industrial control system">
+    </div>
+    <div class="content-block">
+      <p class="label">About ZubaLink</p>
+      <h2>Practical engineering support for productive operations.</h2>
+      <p>ZubaLink is an industrial engineering company focused on automation, electrical installations, equipment supply, CCTV systems, machine repair, electronics servicing and maintenance support.</p>
+      <p>We work with organizations that need dependable systems, fast technical response and professional project execution.</p>
+      <div class="check-list">
+        <span>Reliable technical team</span>
+        <span>Industrial and institutional support</span>
+        <span>Modern engineering solutions</span>
+      </div>
+      <a href="/about/" class="text-link">Learn more about us</a>
+    </div>
+  </div>
+</section>
+
+<section class="section services-section" id="services">
+  <div class="container section-head">
+    <p class="label">Our Services</p>
+    <h2>Professional services designed for industrial reliability.</h2>
+    <p>Clear, dependable engineering support from planning to installation, commissioning, repair and long-term maintenance.</p>
+  </div>
+  <div class="container service-grid">
+    <article><span>01</span><h3>Industrial Automation</h3><p>PLC systems, HMI interfaces, sensors, control logic and process automation support.</p></article>
+    <article><span>02</span><h3>Electrical Installations</h3><p>Industrial wiring, power distribution, panels, testing, commissioning and upgrades.</p></article>
+    <article><span>03</span><h3>Equipment Supply</h3><p>Reliable industrial components, control panels, motors, pumps and spare parts.</p></article>
+    <article><span>04</span><h3>Maintenance Services</h3><p>Preventive maintenance, troubleshooting, repairs and technical support for operations.</p></article>
+    <article><span>05</span><h3>CCTV Installations</h3><p>Camera installation, monitoring systems and practical security integration.</p></article>
+    <article><span>06</span><h3>Machine Repair</h3><p>Diagnostics, electronics servicing and repair support for industrial equipment.</p></article>
+  </div>
+</section>
+
+<section class="section why-section">
+  <div class="container split-grid reverse">
+    <div class="content-block light-card">
+      <p class="label">Why Choose Us</p>
+      <h2>Engineered with care. Delivered with accountability.</h2>
+      <p>We combine technical skill with professional communication, practical planning and reliable after-service support.</p>
+      <div class="feature-grid">
+        <div><strong>01</strong><span>Professional execution</span></div>
+        <div><strong>02</strong><span>Safety-first approach</span></div>
+        <div><strong>03</strong><span>Fast response time</span></div>
+        <div><strong>04</strong><span>Long-term support</span></div>
+      </div>
+    </div>
+    <img class="rounded-img" src="{% static 'pages/img/project-7.jpeg' %}" alt="Industrial engineering project">
+  </div>
+</section>
+
+<section class="section projects-section">
+  <div class="container section-head inline-head">
+    <div>
+      <p class="label">Selected Projects</p>
+      <h2>Real work from technical environments.</h2>
+    </div>
+    <a href="/projects/" class="btn btn-blue-outline">View Projects</a>
+  </div>
+  <div class="container project-grid">
+    <article><img src="{% static 'pages/img/project-13.jpeg' %}" alt="Industrial process control"><div><h3>Industrial Process Control</h3><p>Control and instrumentation support for operating environments.</p></div></article>
+    <article><img src="{% static 'pages/img/project-8.jpeg' %}" alt="Panel installation"><div><h3>Panel Installations</h3><p>Electrical panel setup, organization and commissioning.</p></div></article>
+    <article><img src="{% static 'pages/img/project-4.jpeg' %}" alt="Industrial maintenance"><div><h3>Industrial Maintenance</h3><p>Repair, troubleshooting and system reliability support.</p></div></article>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container cta-box">
+    <div>
+      <p class="label white">Contact ZubaLink</p>
+      <h2>Let’s build something reliable together.</h2>
+      <p>Have a project, repair request or technical requirement? Our team is ready to support your goals.</p>
+    </div>
+    <a href="/contact/" class="btn btn-white">Contact Us</a>
+  </div>
+</section>
+{% endblock %}

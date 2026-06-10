@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>{% block title %}ZubaLink | Industrial Engineering Solutions{% endblock %}</title>
+  <meta name="description" content="ZubaLink provides industrial automation, electrical installations, equipment supply, maintenance, CCTV and machine repair services in Rwanda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'pages/styles.css' %}">
+</head>
+<body>
+<header class="site-header" id="top">
+  <div class="nav-shell">
+    <a class="brand" href="/" aria-label="ZubaLink Home">
+      <img src="{% static 'pages/img/zubalink-logo.png' %}" alt="ZubaLink logo">
+    </a>
+
+    <button class="nav-toggle" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/about/">About Us</a>
+      <a href="/services/">Services</a>
+      <a href="/projects/">Projects</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="{% static 'pages/img/zubalink-logo.png' %}" alt="ZubaLink logo" class="footer-logo">
+      <p>Reliable industrial engineering, automation, electrical and technical support services for organizations across Rwanda.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="/">Home</a>
+      <a href="/about/">About Us</a>
+      <a href="/services/">Services</a>
+      <a href="/projects/">Projects</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <p>Industrial Automation<br>Electrical Installations<br>Equipment Supply<br>Maintenance Services<br>CCTV Installations</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>+250 788 408 453<br>zubalink.ltd@gmail.com<br>Western Province<br>Rubavu • Gisenyi</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ZubaLink. All rights reserved.</span>
+    <a href="#top"></a>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.main-nav a').forEach(link => {
+    link.addEventListener('click', () => document.body.classList.remove('nav-open'));
+  });
+</script>
+</body>
+</html>

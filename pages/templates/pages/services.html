@@ -1,0 +1,43 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block title %}Services | ZubaLink Engineering Solutions{% endblock %}
+{% block content %}
+<section class="page-hero" style="background-image:linear-gradient(90deg,rgba(15,35,75,.94),rgba(15,61,145,.70)),url('{% static "pages/img/project-12.jpeg" %}');">
+  <div class="container">
+    <p class="eyebrow">Our Services</p>
+    <h1>Engineering services built for reliability and performance.</h1>
+    <p>From automation and electrical systems to maintenance, repair and CCTV support, ZubaLink delivers practical technical solutions.</p>
+  </div>
+</section>
+
+<section class="section services-section">
+  <div class="container service-grid page-services">
+    <article><span>01</span><h3>Industrial Automation</h3><p>PLC systems, HMI interfaces, control logic, sensors, instrumentation and process automation support.</p></article>
+    <article><span>02</span><h3>Electrical Installations</h3><p>Industrial wiring, power distribution, panel installation, testing, commissioning and electrical upgrades.</p></article>
+    <article><span>03</span><h3>Equipment Supply</h3><p>Industrial components, electrical accessories, control panels, motors, pumps and reliable spare parts.</p></article>
+    <article><span>04</span><h3>Maintenance Services</h3><p>Preventive maintenance, troubleshooting, system upgrades, inspections and operational support.</p></article>
+    <article><span>05</span><h3>CCTV Installations</h3><p>Camera installation, monitoring systems, security wiring and site-based surveillance support.</p></article>
+    <article><span>06</span><h3>Machine Repair & Electronics</h3><p>Machine diagnostics, electronics servicing, fault finding and control equipment maintenance.</p></article>
+  </div>
+</section>
+
+<section class="process-section">
+  <div class="container section-head">
+    <p class="label">How We Work</p>
+    <h2>A clear process from request to delivery.</h2>
+  </div>
+  <div class="container process-grid">
+    <div><strong>01</strong><h3>Understand</h3><p>We review the project, fault or technical requirement.</p></div>
+    <div><strong>02</strong><h3>Plan</h3><p>We recommend a practical solution, timeline and resources.</p></div>
+    <div><strong>03</strong><h3>Execute</h3><p>We deliver the installation, repair, setup or maintenance work.</p></div>
+    <div><strong>04</strong><h3>Support</h3><p>We provide follow-up technical support and guidance.</p></div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container cta-box">
+    <div><h2>Looking for a specific service?</h2><p>Tell us what your organization needs and we will guide you on the best solution.</p></div>
+    <a href="/contact/" class="btn btn-white">Contact Us</a>
+  </div>
+</section>
+{% endblock %}

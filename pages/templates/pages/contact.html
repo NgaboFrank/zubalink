@@ -1,0 +1,52 @@
+{% extends 'pages/base.html' %}
+{% block title %}Contact ZubaLink | Engineering Support{% endblock %}
+{% block content %}
+<section class="page-hero contact-hero">
+  <div class="container">
+    <p class="eyebrow">Contact Us</p>
+    <h1>Let’s discuss your next engineering requirement.</h1>
+    <p>Reach out for industrial automation, electrical engineering, CCTV installations, equipment supply, machine repair and maintenance services.</p>
+  </div>
+</section>
+
+<section class="section contact-page">
+  <div class="container contact-grid">
+    <div class="contact-panel">
+      <p class="label">Contact Information</p>
+      <h2>Talk to our technical team.</h2>
+      <p>Share your project or service request and ZubaLink will help you identify the best practical solution.</p>
+      <div class="contact-list">
+        <div><span>Phone</span><strong>+250 788 408 453</strong></div>
+        <div><span>Email</span><strong>zubalink.ltd@gmail.com</strong></div>
+        <div><span>Location</span><strong>Western Province • Rubavu • Gisenyi</strong></div>
+      </div>
+      <div class="contact-buttons">
+        <a href="tel:+250788408453" class="btn btn-primary">Call Us</a>
+        <a href="https://wa.me/250788408453" target="_blank" class="btn btn-blue-outline">WhatsApp Us</a>
+      </div>
+    </div>
+
+    <form class="contact-form" method="post">
+      {% csrf_token %}
+      <div class="form-row">
+        <label>Name<input type="text" name="name" placeholder="Your full name" required></label>
+        <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      </div>
+      <label>Company / Organization<input type="text" name="company" placeholder="Company name"></label>
+      <label>Service Needed
+        <select name="service">
+          <option>Industrial Automation</option>
+          <option>Electrical Installations</option>
+          <option>Equipment Supply</option>
+          <option>Maintenance Services</option>
+          <option>CCTV Installations</option>
+          <option>Machine Repair & Electronics</option>
+          <option>Other Technical Support</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" rows="6" placeholder="Tell us about your project or request" required></textarea></label>
+      <button class="btn btn-primary" type="submit">Contact Us on WhatsApp</button>
+    </form>
+  </div>
+</section>
+{% endblock %}

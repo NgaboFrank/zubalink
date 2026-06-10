@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "zubalink/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "zubalink/wsgi.py"
+    }
+  ]
+}

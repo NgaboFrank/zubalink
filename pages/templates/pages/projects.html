@@ -1,0 +1,44 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block title %}Projects | ZubaLink Engineering Work{% endblock %}
+{% block content %}
+<section class="page-hero" style="background-image:linear-gradient(90deg,rgba(15,35,75,.94),rgba(15,61,145,.70)),url('{% static "pages/img/project-13.jpeg" %}');">
+  <div class="container">
+    <p class="eyebrow">Projects</p>
+    <h1>Selected technical work from real environments.</h1>
+    <p>Explore examples of ZubaLink work across control systems, electrical installations, automation and industrial maintenance.</p>
+  </div>
+</section>
+
+<section class="section projects-section">
+  <div class="container project-grid large-grid">
+    <article><img src="{% static 'pages/img/project-13.jpeg' %}" alt="Industrial process control"><div><h3>Industrial Process Control</h3><p>Control and instrumentation support for production environments.</p></div></article>
+    <article><img src="{% static 'pages/img/project-14.jpeg' %}" alt="Instrumentation systems"><div><h3>Instrumentation Systems</h3><p>Technical systems supporting monitoring, accuracy and reliability.</p></div></article>
+    <article><img src="{% static 'pages/img/project-1.jpeg' %}" alt="Control systems"><div><h3>Control Systems</h3><p>Automation and control work for dependable operations.</p></div></article>
+    <article><img src="{% static 'pages/img/project-8.jpeg' %}" alt="Panel installation"><div><h3>Panel Installations</h3><p>Organized panel installation and electrical support.</p></div></article>
+    <article><img src="{% static 'pages/img/project-4.jpeg' %}" alt="Industrial maintenance"><div><h3>Industrial Maintenance</h3><p>Troubleshooting, servicing and operational support.</p></div></article>
+    <article><img src="{% static 'pages/img/project-2.jpeg' %}" alt="Process automation"><div><h3>Process Automation</h3><p>Automation solutions for production and technical efficiency.</p></div></article>
+    <article><img src="{% static 'pages/img/project-3.jpeg' %}" alt="Conveyor systems"><div><h3>Conveyor Systems</h3><p>Support for industrial movement and process systems.</p></div></article>
+    <article><img src="{% static 'pages/img/project-10.jpeg' %}" alt="Electrical engineering"><div><h3>Electrical Engineering</h3><p>Electrical systems support for industrial and institutional projects.</p></div></article>
+  </div>
+</section>
+
+<section class="section video-section">
+  <div class="container section-head">
+    <p class="label">Project Video</p>
+    <h2>Technical work in motion.</h2>
+  </div>
+  <div class="container video-wrap">
+    <video controls>
+      <source src="{% static 'pages/img/project-video.mp4' %}" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container cta-box">
+    <div><h2>Have a project like this?</h2><p>Contact ZubaLink for professional technical support.</p></div>
+    <a href="/contact/" class="btn btn-white">Contact Us</a>
+  </div>
+</section>
+{% endblock %}
